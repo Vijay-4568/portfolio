@@ -1,0 +1,261 @@
+/* portstyle.css */
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #040341;
+    color: white;
+}
+
+/* Header Styling */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #040341;
+    color: white;
+    padding: 20px;
+    flex-direction: column;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+.logo h1 {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+.logo img {
+    max-width: 50px;
+    height: auto;
+    margin-right: 10px;
+    border-radius: 20px;
+}
+
+/* Navigation Styling */
+.nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #040341;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.nav-btn {
+    background-color: #060574;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    font-size: 18px;
+    border-radius: 5px;
+    text-transform: uppercase;
+}
+
+.nav-btn:hover {
+    background-color: #e41304;
+    color: #f7f1f1;
+}
+
+/* Content Styling */
+.content {
+    display: none;
+    padding: 20px;
+}
+
+.content.active {
+    display: block;
+}
+
+h1 {
+    font-size: 36px;
+    color: #f8f5f5;
+}
+
+ul {
+    list-style: none;
+}
+
+.project {
+    margin-bottom: 140px;
+    color: white;
+    font-size: 25px;
+}
+
+.project-details {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.project img {
+    max-width: 20%;
+    
+
+    margin-right: 20px;
+}
+
+.project-description {
+    flex: 1;
+}
+
+/* Home Page Styling */
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 80vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.home h1 {
+    font-size: 48px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    position: relative;
+    z-index: 2;
+}
+
+.home p {
+    font-size: 24px;
+    font-family: 'Arial', sans-serif;
+    position: relative;
+    z-index: 2;
+    margin-top: 20px;
+}
+
+.background-shapes {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    pointer-events: none;
+}
+
+.background-shape {
+    position: absolute;
+    opacity: 0.5;
+    pointer-events: none;
+    animation: moveShape 10s infinite linear;
+}
+
+@keyframes moveShape {
+    0% {
+        transform: translate(0, 0);
+    }
+    100% {
+        transform: translate(100%, 100%);
+    }
+}
+
+/* About Me Page Styling */
+.about-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-content img {
+    max-width: 25%;
+    height: 300px;
+    margin-right: 20px;
+    border-radius: 20px;
+}
+
+.text-content {
+    flex: 10;
+    text-align: justify;
+}
+
+/* Resume Page Styling */
+#resume {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#resume img {
+    max-width: 35%;
+    
+    border-radius: 20px;
+}
+.resume12{
+    padding-left: 430px;
+}
+
+/* Contact Page Styling */
+.contact form {
+    width: 50%;
+    padding-left: 10px;
+    margin: 10px auto;
+}
+
+.contact input,
+.contact textarea {
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+    height: 40px;
+    padding: 10px;
+    border: 1px solid #a1a1a1;
+}
+
+.contact textarea {
+    height: 80px;
+}
+
+.contact button {
+    width: 100%;
+    float: left;
+    margin-bottom: 20px;
+    height: 40px;
+    padding: 10px;
+    background: #ffbf35;
+    color: #fff;
+    border: none;
+    font-size: 16px;
+}
+
+.contact h3 {
+    font-size: 26px;
+    text-align: center;
+    margin-top: 60px;
+    color: #ffbf35;
+}
+
+.contact h4 {
+    font-size: 22px;
+    text-align: center;
+    margin-top: 10px;
+}
+
+.contact p {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 5px;
+}
+
+.certified {
+    padding-left: 110px;
+    padding-bottom: 100px;
+}
